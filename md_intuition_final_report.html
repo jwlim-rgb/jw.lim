@@ -1,0 +1,294 @@
+
+<h2 class="sr-only">MD 직관 육성 실험 최종 분석 보고서 — 기획전 전후 성과, 신상품 육성 효과, 브랜드 사분면, 상품 효율 순위, 중장기 타당성 종합</h2>
+
+<style>
+*{box-sizing:border-box}
+.rpt{padding:4px 0 32px;max-width:100%}
+.cover{background:#12213A;border-radius:var(--border-radius-lg);padding:28px 32px 24px;margin-bottom:24px;position:relative;overflow:hidden}
+.cover-accent{position:absolute;top:-30px;right:-30px;width:180px;height:180px;border-radius:50%;background:#0F7173;opacity:.15}
+.cover-accent2{position:absolute;bottom:-20px;right:60px;width:100px;height:100px;border-radius:50%;background:#1D9E75;opacity:.12}
+.cover-tag{font-size:10px;font-weight:500;letter-spacing:.1em;color:#1D9E75;margin-bottom:8px}
+.cover-title{font-size:26px;font-weight:500;color:#fff;line-height:1.25;margin-bottom:6px}
+.cover-sub{font-size:13px;color:#7fa8c4;margin-bottom:16px}
+.cover-meta{display:flex;flex-wrap:wrap;gap:16px;font-size:11px;color:#6a8fa8;border-top:1px solid rgba(255,255,255,.1);padding-top:12px}
+.cover-meta span b{color:#9fc5d8;font-weight:500}
+
+.sec{font-size:10px;font-weight:500;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:.08em;margin:28px 0 10px;padding-bottom:6px;border-bottom:.5px solid var(--color-border-tertiary)}
+
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-bottom:4px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:4px}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.mc{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:13px 14px}
+.mc-top{height:3px;border-radius:2px 2px 0 0;margin:-13px -14px 10px}
+.ml{font-size:10px;color:var(--color-text-secondary);margin-bottom:3px}
+.mv{font-size:20px;font-weight:500;color:var(--color-text-primary)}
+.md{font-size:10px;margin-top:3px}
+.up{color:#1D9E75}.dn{color:#D85A30}.neu{color:var(--color-text-secondary)}
+
+.ibox{border-left:3px solid;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0;padding:10px 14px;margin-bottom:8px;font-size:12px;color:var(--color-text-primary);line-height:1.65;background:var(--color-background-secondary)}
+.ibox.g{border-color:#1D9E75}.ibox.a{border-color:#BA7517}.ibox.b{border-color:#378ADD}.ibox.r{border-color:#D85A30}.ibox.p{border-color:#7F77DD}
+.hl{font-weight:500}
+.tag{display:inline-block;font-size:9px;padding:2px 7px;border-radius:3px;margin-right:5px;font-weight:500;vertical-align:middle}
+.tg{background:#EAF3DE;color:#3B6D11}.ta{background:#FAEEDA;color:#854F0B}.tr{background:#FAECE7;color:#993C1D}.tb{background:#E6F1FB;color:#185FA5}.tp{background:#EEEDFE;color:#534AB7}
+
+.cw{position:relative;width:100%}
+.note{font-size:11px;color:var(--color-text-secondary);line-height:1.55;margin:4px 0 10px}
+
+.quad-g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:8px}
+.qcard{border-radius:var(--border-radius-md);padding:11px 13px;border:.5px solid var(--color-border-tertiary)}
+.qcard.qa{background:#EAF3DE;border-color:#97C459}.qcard.qb{background:#E6F1FB;border-color:#85B7EB}
+.qcard.qc{background:#FAEEDA;border-color:#EF9F27}.qcard.qd{background:var(--color-background-secondary)}
+.qt{font-size:10px;font-weight:500;margin-bottom:5px}
+.qi{font-size:10px;line-height:1.7;color:var(--color-text-secondary)}
+
+.leg{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:8px;font-size:11px;color:var(--color-text-secondary);align-items:center}
+.ld{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:3px;vertical-align:middle;flex-shrink:0}
+
+.verdict{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:16px 18px;margin-top:4px}
+.verdict-row{display:flex;gap:16px}
+.verdict-col{flex:1}
+.verdict-head{font-size:11px;font-weight:500;margin-bottom:8px}
+.verdict-item{display:flex;align-items:flex-start;gap:8px;margin-bottom:7px;font-size:11px;color:var(--color-text-primary);line-height:1.55}
+.verdict-dot{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:500;flex-shrink:0;margin-top:1px}
+.vdg{background:#EAF3DE;color:#3B6D11}.vdr{background:#FCEBEB;color:#A32D2D}
+
+.rec-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:10px}
+.rec-card{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:12px 13px}
+.rec-num{font-size:11px;font-weight:500;color:#0F7173;margin-bottom:4px}
+.rec-title{font-size:12px;font-weight:500;color:var(--color-text-primary);margin-bottom:5px}
+.rec-body{font-size:11px;color:var(--color-text-secondary);line-height:1.55}
+</style>
+
+<div class="rpt">
+
+<div class="cover">
+  <div class="cover-accent"></div>
+  <div class="cover-accent2"></div>
+  <div class="cover-tag">FABRIC CATEGORY · MD INTUITION EXPERIMENT</div>
+  <div class="cover-title">MD 직관 육성 실험<br>분석 보고서</div>
+  <div class="cover-sub">효율 로직을 벗어난 신상품 강제 노출 실험 — 패브릭 봄봄 기획전(17687) 연계</div>
+  <div class="cover-meta">
+    <span><b>분석 기간</b> 2026.04.01 – 04.09 (9일)</span>
+    <span><b>분석 모수</b> 판매중 상품 969개 (판매정지·일시품절 제외)</span>
+    <span><b>신상품 기준</b> 출시 3개월 이내 (171개)</span>
+    <span><b>기획전 투입</b> 4/6 ~</span>
+  </div>
+</div>
+
+<div class="sec">실험 배경 — 왜 이 실험인가</div>
+<div class="ibox b">
+  <span class="tag tb">문제의식</span>현재 효율 중심 로직은 전환율·구매수 기반으로 상위 노출을 결정하기 때문에, 리뷰가 없는 신상품은 아무리 좋아도 노출 자체가 불가능한 구조다. 결과적으로 <span class="hl">매스 브랜드 중심의 노출 고착화</span>가 일어나고, 신규 트렌드 브랜드와 상품의 자립 성장 경로가 막힌다.
+</div>
+<div class="ibox p">
+  <span class="tag tp">실험 설계</span>신뢰할 수 있는 MD가 직접 선별한 상품에 <span class="hl">로직 가중치 조정 + 기획전 의무 배치 + 오늘의딜 우선 노출</span> 3가지 방법으로 노출량을 강제 극대화. 단기 카테고리 효율 하락을 감수하고, <span class="hl">첫 구매 → 리뷰 누적 → 알고리즘 자립의 플라이휠</span>을 구동시키는 것이 목표.
+</div>
+
+<div class="sec">01 — 기획전 전후 핵심 지표 (판매중 969개 기준)</div>
+<div class="g4">
+  <div class="mc"><div class="mc-top" style="background:#1D9E75"></div><div class="ml">일평균 노출수</div><div class="mv">973K</div><div class="md up">486K → +100% ↑</div></div>
+  <div class="mc"><div class="mc-top" style="background:#1D9E75"></div><div class="ml">일평균 거래액</div><div class="mv">1,293만원</div><div class="md up">846만원 → +53% ↑</div></div>
+  <div class="mc"><div class="mc-top" style="background:#1D9E75"></div><div class="ml">일평균 구매수</div><div class="mv">158건</div><div class="md up">112건 → +41% ↑</div></div>
+  <div class="mc"><div class="mc-top" style="background:#D85A30"></div><div class="ml">조회→구매 CVR</div><div class="mv" style="color:#D85A30">0.651%</div><div class="md dn">0.821% → −21% ↓</div></div>
+</div>
+<div class="note">노출 +100% 대비 거래액 +53% — 노출당 효율은 절반 수준으로 희석됐으나 절대 거래액은 유의미하게 증가. CVR 하락은 구매 의향 없는 탐색 트래픽 유입 증가로 인한 예고된 현상이며, 현재 하락폭(−21%)은 관리 가능한 범위.</div>
+
+<div class="g2" style="margin-bottom:4px">
+  <div>
+    <div class="note" style="margin-bottom:5px">기획전 전 일별 노출 (천회)</div>
+    <div class="cw" style="height:140px"><canvas id="preC" role="img" aria-label="기획전 전 4월1일부터 5일까지 일별 노출수">4/1~4/5 일별 노출 440K 440K 460K 477K 613K</canvas></div>
+  </div>
+  <div>
+    <div class="note" style="margin-bottom:5px">기획전 후 일별 노출 (천회)</div>
+    <div class="cw" style="height:140px"><canvas id="postC" role="img" aria-label="기획전 후 4월6일부터 9일까지 일별 노출수">4/6~4/9 일별 노출 1019K 867K 1108K 899K</canvas></div>
+  </div>
+</div>
+
+<div class="sec">02 — 신상품 육성 효과 (출시 3개월 이내 기준)</div>
+<div class="g3">
+  <div class="mc"><div class="ml">3개월이내 신상품</div><div class="mv">171개</div><div class="md neu">전체 969개 중 17.6%</div></div>
+  <div class="mc"><div class="ml">구매 발생 상품 비율</div><div class="mv up">43.9%</div><div class="md neu">기존상품 23.3% 대비 +20.6%p</div></div>
+  <div class="mc"><div class="ml">조회→구매 CVR</div><div class="mv up">0.776%</div><div class="md up">기존상품 0.700% 대비 +11%</div></div>
+</div>
+<div class="note">노출 기회만 주면 신상품도 기존 상품보다 잘 전환된다. 히든젬 22개 확인 — 리뷰 15개 이하임에도 구매 3건 이상, 평점 5.0 유지.</div>
+
+<div class="cw" style="height:130px;margin-bottom:4px"><canvas id="newOldC" role="img" aria-label="신상품과 기존상품의 구매발생률 및 CVR 비교 막대차트">신상품 구매발생률 43.9% CVR 0.776% vs 기존상품 23.3% CVR 0.700%</canvas></div>
+
+<div class="sec">03 — 브랜드 효율 사분면 (노출 상위 25개 브랜드, 중앙값 기준 분류)</div>
+<div class="note">x축: 노출당 거래액(원) / y축: 상품당 거래액(만원) / 원 크기: 총 노출수 비례. 중앙값: 노출당 13.9원 · 상품당 6.4만원.</div>
+<div class="leg">
+  <span><span class="ld" style="background:#1D9E75"></span>A — 고효율·고단가</span>
+  <span><span class="ld" style="background:#378ADD"></span>B — 고효율·저단가</span>
+  <span><span class="ld" style="background:#BA7517"></span>C — 저효율·고단가</span>
+  <span><span class="ld" style="background:#888780"></span>D — 저효율·저단가</span>
+</div>
+<div class="cw" style="height:300px"><canvas id="quadC" role="img" aria-label="브랜드별 노출당거래액과 상품당거래액 버블차트 사분면">비비홈 슬라운드 오르디가 A사분면, 웜그레이테일 도르모르가 D사분면</canvas></div>
+<div class="quad-g" style="margin-top:10px">
+  <div class="qcard qa"><div class="qt" style="color:#3B6D11">A — 고효율·고단가 (집중 육성 최우선)</div><div class="qi">비비홈 · 슬라운드 · 오르디 · 댄스온더플로어 · 오셀픽 · 누비지오 · 이씨라메종 · 티세르</div></div>
+  <div class="qcard qb"><div class="qt" style="color:#185FA5">B — 고효율·저단가 (효율 좋음, 객단가 보완 필요)</div><div class="qi">울랄라파자마 · 고그린오브젝트 · 라튤립 · 마리엔젤 · 픽켄드 · 오디넌트</div></div>
+  <div class="qcard qc"><div class="qt" style="color:#854F0B">C — 저효율·고단가 (가격 허들 검토 필요)</div><div class="qi">마틸라 · 바자르 · 다이드인 · 프루웨 · 콤마씨</div></div>
+  <div class="qcard qd"><div class="qt" style="color:var(--color-text-secondary)">D — 저효율·저단가 (노출 재배분 대상)</div><div class="qi">웜그레이테일 · 도르모르 · cocon · 칸드 · 파피요트 · 오렌지스위밍풀</div></div>
+</div>
+
+<div class="ibox r" style="margin-top:4px">
+  <span class="tag tr">경고</span><span class="hl">웜그레이테일</span> — 노출 533K(전체 3위)를 받았지만 거래액 277만원, 노출당 5.2원으로 D사분면 최하위. 오늘의집 단독 상품 2개 포함 구매 0건. 직관 선정 정확도의 가장 명확한 실패 사례로, 노출 배분 즉시 재검토 필요.
+</div>
+
+<div class="sec">04 — 상품 단위 노출당 거래액 TOP 15 (노출 5,000회 이상 · 구매 발생 · 판매중)</div>
+<div class="leg"><span><span class="ld" style="background:#378ADD"></span>신상품 (출시 3개월이내)</span><span><span class="ld" style="background:#B4B2A9"></span>기존 상품</span></div>
+<div class="cw" style="height:650px"><canvas id="prodC" role="img" aria-label="상품별 노출당 거래액 수평 막대차트 상위 15개">알러메디 윤슬이 166원으로 1위, 슬라운드 오르디 마틸라 신상품이 상위권</canvas></div>
+
+<div class="sec">05 — 노출 낭비 현황</div>
+<div class="g3">
+  <div class="mc"><div class="mc-top" style="background:#D85A30"></div><div class="ml">노출 5K+ 구매 0건</div><div class="mv" style="color:#D85A30">67개</div><div class="md neu">전체 969개 중 6.9%</div></div>
+  <div class="mc"><div class="mc-top" style="background:#BA7517"></div><div class="ml">히든젬 (3개월 신상품)</div><div class="mv" style="color:#BA7517">22개</div><div class="md neu">리뷰 15개 이하 · 구매 3건 이상</div></div>
+  <div class="mc"><div class="mc-top" style="background:#378ADD"></div><div class="ml">CVR 희석</div><div class="mv" style="color:#378ADD">−21%</div><div class="md neu">현재 관리 가능 범위</div></div>
+</div>
+<div class="note">오디넌트 '샘 스트라이프' — 노출 84,236회, 리뷰 130개, 스크랩 8,943개의 높은 감도를 보유하면서도 구매 0건. "감도(스크랩) ≠ 구매 의향"의 극단적 반례. 현재 직관 선정 정확도에 편차가 있음을 보여주는 가장 명확한 신호.</div>
+
+<div class="sec">06 — 중장기 타당성 판단 및 운영 권고</div>
+<div class="verdict">
+  <div class="ibox g" style="margin-bottom:14px">
+    <span class="tag tg">종합 판단</span>밀어붙일 근거는 충분하다. 신상품 CVR이 기존 상품을 앞서고, 히든젬 22개가 실증됐으며, 거래액 +53% 증가가 실현됐다. 단 현행 설계 그대로 장기 지속 시 노출 낭비가 누적된다. 3가지 설계 개선을 병행하면 중장기 임팩트 확보 가능.
+  </div>
+  <div class="verdict-row">
+    <div class="verdict-col">
+      <div class="verdict-head" style="color:#1D9E75">계속해야 하는 이유</div>
+      <div class="verdict-item"><div class="verdict-dot vdg">✓</div><div>신상품 CVR 0.776% > 기존상품 0.700% — 노출만 주면 전환된다</div></div>
+      <div class="verdict-item"><div class="verdict-dot vdg">✓</div><div>히든젬 22개 — 효율 로직으로는 절대 발견 못 했을 상품들</div></div>
+      <div class="verdict-item"><div class="verdict-dot vdg">✓</div><div>첫 구매 → 리뷰 누적 → 알고리즘 자립 플라이휠의 시작점</div></div>
+    </div>
+    <div class="verdict-col">
+      <div class="verdict-head" style="color:#D85A30">설계 변경 없이 지속 시 문제</div>
+      <div class="verdict-item"><div class="verdict-dot vdr">!</div><div>노출 5K+ 구매 0건 67개 — 자원 낭비 누적</div></div>
+      <div class="verdict-item"><div class="verdict-dot vdr">!</div><div>웜그레이테일 533K 노출·거래액 277만원 — 선정 정확도 편차</div></div>
+      <div class="verdict-item"><div class="verdict-dot vdr">!</div><div>CVR −21% 희석 장기화 시 카테고리 KPI 방어 어려워짐</div></div>
+    </div>
+  </div>
+  <div class="rec-row">
+    <div class="rec-card">
+      <div class="rec-num">권고 01</div>
+      <div class="rec-title">2주 단위 컷오프</div>
+      <div class="rec-body">노출 1만회 이상임에도 구매 0건 상품은 대기열에서 교체. 현재 67개 즉시 대상.</div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-num">권고 02</div>
+      <div class="rec-title">A사분면 브랜드 집중</div>
+      <div class="rec-body">비비홈·슬라운드·오르디 등 노출당 효율 상위 브랜드의 신상품에 노출 가중치 집중 배분.</div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-num">권고 03</div>
+      <div class="rec-title">육성 지표 분리 트래킹</div>
+      <div class="rec-body">육성 실험 상품군 CVR을 카테고리 전체 KPI와 분리해야 실험 신호가 노이즈에 묻히지 않음.</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const dk = matchMedia('(prefers-color-scheme: dark)').matches;
+const tc = dk?'#aaa':'#666';
+const gc = dk?'rgba(255,255,255,.06)':'rgba(0,0,0,.05)';
+
+new Chart(document.getElementById('preC'),{
+  type:'bar',
+  data:{labels:['4/1','4/2','4/3','4/4','4/5'],datasets:[{data:[440,440,460,477,613],backgroundColor:'#B5D4F4',borderRadius:3}]},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.y}천회`}}},
+    scales:{x:{ticks:{color:tc,font:{size:10}},grid:{display:false}},y:{ticks:{color:tc,font:{size:9},callback:v=>v+'K'},grid:{color:gc}}}}
+});
+
+new Chart(document.getElementById('postC'),{
+  type:'bar',
+  data:{labels:['4/6','4/7','4/8','4/9'],datasets:[{data:[1019,867,1108,899],backgroundColor:'#0F7173',borderRadius:3}]},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.y}천회`}}},
+    scales:{x:{ticks:{color:tc,font:{size:10}},grid:{display:false}},y:{ticks:{color:tc,font:{size:9},callback:v=>v+'K'},grid:{color:gc}}}}
+});
+
+new Chart(document.getElementById('newOldC'),{
+  type:'bar',
+  data:{
+    labels:['구매 발생 상품 비율 (%)','조회→구매 CVR (%)'],
+    datasets:[
+      {label:'신상품(3개월이내)',data:[43.9,0.776],backgroundColor:'#1D9E75',borderRadius:3},
+      {label:'기존상품',data:[23.3,0.700],backgroundColor:'#B4B2A9',borderRadius:3}
+    ]
+  },
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${c.parsed.y.toFixed(3)}%`}}},
+    scales:{x:{ticks:{color:tc,font:{size:10}},grid:{display:false}},y:{ticks:{color:tc,font:{size:9},callback:v=>v+'%'},grid:{color:gc}}}}
+});
+
+const brands=[
+  {n:'마틸라',x:15.3,y:109.0,e:1142151,q:'C'},
+  {n:'비비홈',x:27.5,y:63.6,e:555713,q:'A'},
+  {n:'웜그레이테일',x:5.2,y:6.6,e:533420,q:'D'},
+  {n:'도르모르',x:9.8,y:7.2,e:498060,q:'D'},
+  {n:'오셀픽',x:13.7,y:27.5,e:421483,q:'A'},
+  {n:'바자르',x:12.4,y:92.8,e:299017,q:'C'},
+  {n:'오디넌트',x:11.2,y:5.5,e:291114,q:'B'},
+  {n:'cocon',x:7.8,y:7.6,e:224108,q:'D'},
+  {n:'다이드인',x:12.1,y:10.7,e:202780,q:'C'},
+  {n:'댄스온더플로어',x:20.0,y:54.5,e:190622,q:'A'},
+  {n:'픽켄드',x:11.0,y:26.0,e:189823,q:'B'},
+  {n:'슬라운드',x:32.6,y:30.9,e:170727,q:'A'},
+  {n:'울랄라파자마',x:19.2,y:5.0,e:119874,q:'B'},
+  {n:'티세르',x:21.4,y:6.3,e:113936,q:'A'},
+  {n:'라튤립',x:14.2,y:10.8,e:106898,q:'B'},
+  {n:'칸드',x:11.7,y:3.8,e:104576,q:'D'},
+  {n:'오르디',x:26.8,y:37.5,e:97854,q:'A'},
+  {n:'누비지오',x:14.7,y:65.8,e:89240,q:'A'},
+  {n:'고그린오브젝트',x:14.2,y:3.6,e:83971,q:'B'},
+  {n:'파피요트',x:9.0,y:2.2,e:81898,q:'D'},
+  {n:'프루웨',x:9.0,y:36.8,e:81541,q:'C'},
+  {n:'마리엔젤',x:12.0,y:7.3,e:66967,q:'B'},
+  {n:'이씨라메종',x:32.8,y:19.4,e:53248,q:'A'},
+  {n:'콤마씨',x:6.9,y:1.3,e:52285,q:'C'},
+  {n:'오렌지스위밍풀',x:5.5,y:2.1,e:19560,q:'D'},
+];
+const qc={A:'#1D9E75',B:'#378ADD',C:'#BA7517',D:'#888780'};
+
+new Chart(document.getElementById('quadC'),{
+  type:'bubble',
+  data:{datasets:brands.map(b=>({
+    label:b.n,
+    data:[{x:b.x,y:b.y,r:Math.max(4,Math.sqrt(b.e)*0.042)}],
+    backgroundColor:qc[b.q]+'99',borderColor:qc[b.q],borderWidth:1.5
+  }))},
+  options:{responsive:true,maintainAspectRatio:false,layout:{padding:16},
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.dataset.label}  노출당:${c.parsed.x.toFixed(1)}원  상품당:${c.parsed.y.toFixed(0)}만원`}}},
+    scales:{
+      x:{min:-2,max:40,title:{display:true,text:'노출당 거래액 (원)',color:tc,font:{size:10}},ticks:{color:tc,font:{size:9}},grid:{color:gc}},
+      y:{min:-5,max:120,title:{display:true,text:'상품당 거래액 (만원)',color:tc,font:{size:10}},ticks:{color:tc,font:{size:9},callback:v=>v+'만'},grid:{color:gc}}
+    }}
+});
+
+const prods=[
+  {n:'알러메디 윤슬 (슬라운드)',v:166.0,nw:true},
+  {n:'듀이 리버서블 (이씨라메종)',v:102.9,nw:false},
+  {n:'[20%쿠폰]스테이 버튼 (라튤립)',v:92.0,nw:true},
+  {n:'오리지널 에코플루피 (포렌)',v:85.8,nw:false},
+  {n:'벨라 에어터치 모달 (오르디)',v:74.7,nw:true},
+  {n:'Classic Seersucker (파피요트)',v:68.8,nw:false},
+  {n:'더 클래식 반팔파자마 (오셀픽)',v:66.6,nw:false},
+  {n:'알러메디 블룸 (슬라운드)',v:66.3,nw:true},
+  {n:'아뜰리에 알러지케어 (마틸라)',v:62.0,nw:true},
+  {n:'포토 차렵이불 (솜애)',v:56.8,nw:false},
+  {n:'알러메디 레트레 (슬라운드)',v:56.4,nw:false},
+  {n:'알러쉴드 런던 (비비홈)',v:52.3,nw:false},
+  {n:'에브리웨어 데일리 (마틸라)',v:45.5,nw:true},
+  {n:'알러쉴드 비포선셋 (비비홈)',v:37.5,nw:true},
+  {n:'알러메디 스태리 (슬라운드)',v:33.6,nw:false},
+];
+
+new Chart(document.getElementById('prodC'),{
+  type:'bar',
+  data:{labels:prods.map(p=>p.n),datasets:[{data:prods.map(p=>p.v),backgroundColor:prods.map(p=>p.nw?'#378ADD':'#B4B2A9'),borderRadius:3}]},
+  options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.x.toFixed(1)}원 / 노출`}}},
+    scales:{
+      x:{max:190,ticks:{color:tc,font:{size:9},callback:v=>v+'원'},grid:{color:gc}},
+      y:{ticks:{color:tc,font:{size:10}},grid:{display:false}}
+    }}
+});
+</script>
